@@ -1,0 +1,103 @@
+.contact {
+    text-align: center;
+    font-size: 2rem;
+    margin: 4rem 0;
+
+    .me-contact {
+        color: #ff0000;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+form {
+  margin: 0.6rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #000;
+  margin: 0 25% 0 25%;
+
+  sup {
+    font-size: 1.2rem;
+    color: red;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+
+  input {
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    background: rgb(94, 180, 255);
+    width: 100%;
+    font-size: 1rem;
+
+    &::placeholder {
+      color: #474747;
+      padding-left: 0.2rem;
+    }
+  }
+
+  textarea {
+    border: 1px solid red;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000;
+    background: rgb(94, 180, 255);
+    border-radius: 0.5rem;
+
+    &::placeholder {
+      color: #474747;
+    }
+  }
+
+  .btn {
+    width: 200px;
+    padding: 0.7rem 1.8rem;
+    background-color: #dc143c;
+    box-shadow: 0 0 0.3rem #000;
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin: 1.2rem 0;
+    
+    &:hover {
+      background-color: rgb(94, 180, 255);
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #474747;
+
+    sup {
+        color: #FF0000;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+  }
+
+}

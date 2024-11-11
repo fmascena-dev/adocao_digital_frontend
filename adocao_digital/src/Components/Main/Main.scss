@@ -1,0 +1,109 @@
+// Estilo para o título principal
+.titulo {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+// Container principal para os elementos
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+// Estilo para cada sub-container (imagem e texto)
+.sub_container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+  width: 70%;
+  background-color: rgb(94, 180, 255);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+// Estilo para as imagens
+.imagem {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+// Container para o texto (subtítulo e descrição)
+.texto_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+// Estilo para os subtítulos
+.subtitulo {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+// Estilo para as descrições
+.descricao {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+// Estilo para o botão de navegação
+.botao_container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.botao_adotar {
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff210d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f8786f;
+    color: #000;
+  }
+}
+
+// Ajustes de layout para telas menores
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sub_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .imagem {
+      width: 100px;
+    }
+
+    .subtitulo {
+      font-size: 1.25rem;
+    }
+
+    .descricao {
+      font-size: 0.9rem;
+    }
+  }
+
+  .botao_adotar {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
