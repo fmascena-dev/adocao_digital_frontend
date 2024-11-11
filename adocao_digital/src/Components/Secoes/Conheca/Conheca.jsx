@@ -79,7 +79,7 @@ export default function Conheca() {
           pagination={{ clickable: true }}
           navigation={true}
           speed={1000}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 2000 }}
           watchSlidesProgress={true}
           observeParents={true}
         >
